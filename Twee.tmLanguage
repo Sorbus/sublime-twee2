@@ -4,10 +4,10 @@
 <dict>
 	<key>fileTypes</key>
 	<array>
-		<string>tw</string>
+		<string>tw2</string>
 	</array>
 	<key>name</key>
-	<string>Twee</string>
+	<string>Twee2</string>
 	<key>patterns</key>
 	<array>
 		<dict>
@@ -390,8 +390,8 @@
 		</dict>
 	</array>
 	<key>scopeName</key>
-	<string>text.twee</string>
+	<string>text.twee2</string>
 	<key>uuid</key>
-	<string>a30284bd-5e16-49c8-9855-e095bcfe9c51</string>
+	<string>03675de4-e93f-4afb-9af0-ea3e6198bfcf</string>
 </dict>
 </plist>

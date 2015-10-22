@@ -1,6 +1,6 @@
-{ "name": "Twee",
-  "scopeName": "text.twee",
-  "fileTypes": ["tw"],
+{ "name": "Twee2",
+  "scopeName": "text.twee2",
+  "fileTypes": ["tw2"],
   "patterns": [
     { "name": "meta.html.twee",
       "begin": "(<html>)",
