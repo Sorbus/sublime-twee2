@@ -67,13 +67,27 @@
         "1": { "name": "comment.block.punctuation.definition.function.end.twee" }
       },
       "patterns": [
-        { "match": "\\b(savegames|load|save|display|print|set|if|elseif|else|font|click|replace|append|set|put|move|link|link-goto|live|stop|text|history|either|random|array|a|count|floor|ceil|round|min|max|abs|sign|sin|cos|tan|hook|mouseover|mouseout|substring|subarray|dataset|datamap|text-style|text-color|text-colour|backround|transition|t8n|click-replace|click-append|click-prepend|click-remove|mouseover-replace|mouseover-append|mouseover-prepend|mouseover-remove|mouseout-replace|mouseout-append|mouseout-prepend|mouseout-remove)\\b:",
+        { "include": "$self"
+        },
+        { "match": "\\b(if|elseif|else|live|stop)\\b:",
           "name": "keyword.control.twee"
         },
-        { "match": "\\b(it|time)\\b|\\$\\b([A-Za-z_][A-Za-z0-9_]*)\\b|\\?[A-Za-z0-9_]*\\b",
+        { "match": "\\b(set|savegame|savedgames|loadgame|alert|prompt|confirm|display|print|font|click|replace|append|set|put|move|goto|link|link-goto|text|either|random|count|floor|ceil|round|min|max|abs|sign|sin|cos|tan|hook|mouseover|mouseout|text-style|text-color|text-colour|backround|transition|t8n|click-replace|click-append|click-prepend|click-remove|mouseover-replace|mouseover-append|mouseover-prepend|mouseover-remove|mouseout-replace|mouseout-append|mouseout-prepend|mouseout-remove)\\b:",
+          "name": "support.function.twee"
+        },
+        { "match": "\\b(array|a|dataset|datamap)\\b:",
+          "name": "storage.type.twee"
+        },
+        { "match": "\\b(history|substring|subarray)\\b:",
+          "name": "support.class.twee"
+        },
+        { "match": "\\$\\b([A-Za-z_][A-Za-z0-9_]*)\\b|\\?[A-Za-z0-9_]*\\b",
           "name": "variable.parameter.twee"
         },
-        { "match": "\\b(eq|neq|gt|gte|lt|lte|and|or|not|is|is not|to|into|contains|is in)\\b",
+        { "match": "\\b(it|time|length|last|1st|2nd|3rd|[0-9]th)\\b",
+          "name": "variable.language.twee"
+        },
+        { "match": "\\b(eq|neq|gt|gte|lt|lte|and|or|not|is|is not|to|into|contains|is in)\\b|'s",
           "name": "keyword.operator.twee"
         },
         { "match": "('[^']*')",
@@ -102,8 +116,7 @@
         },
         { "match": "\\b(Infinity|NaN|undefined)\\b",
           "name": "constant.language.js"
-        },
-        { "include": "meta.function.twee" }
+        }
       ]
     },
     { "name": "meta.markup.underline.link.twee",
@@ -146,6 +159,7 @@
     { "name": "variable.parameter.twee",
       "match": "<[A-Za-z0-9_]*\\|"
     },
+    
     { "name": "meta.comment.block.twee",
       "begin": "(/%)",
       "beginCaptures": {
@@ -156,7 +170,8 @@
         "1": { "name": "comment.block.punctuation.definition.end.twee" }
       },
       "contentName": "comment.block.twee"
-    }
+    },
+    { "include": "text.html.basic" }
   ],
   "uuid": "03675de4-e93f-4afb-9af0-ea3e6198bfcf"
 }

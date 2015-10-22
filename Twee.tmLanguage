@@ -198,20 +198,48 @@
 			<key>patterns</key>
 			<array>
 				<dict>
+					<key>include</key>
+					<string>$self</string>
+				</dict>
+				<dict>
 					<key>match</key>
-					<string>\b(savegames|load|save|display|print|set|if|elseif|else|font|click|replace|append|set|put|move|link|link-goto|live|stop|text|history|either|random|array|a|count|floor|ceil|round|min|max|abs|sign|sin|cos|tan|hook|mouseover|mouseout|substring|subarray|dataset|datamap|text-style|text-color|text-colour|backround|transition|t8n|click-replace|click-append|click-prepend|click-remove|mouseover-replace|mouseover-append|mouseover-prepend|mouseover-remove|mouseout-replace|mouseout-append|mouseout-prepend|mouseout-remove)\b:</string>
+					<string>\b(if|elseif|else|live|stop)\b:</string>
 					<key>name</key>
 					<string>keyword.control.twee</string>
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>\b(it|time)\b|\$\b([A-Za-z_][A-Za-z0-9_]*)\b|\?[A-Za-z0-9_]*\b</string>
+					<string>\b(set|savegame|savedgames|loadgame|alert|prompt|confirm|display|print|font|click|replace|append|set|put|move|goto|link|link-goto|text|either|random|count|floor|ceil|round|min|max|abs|sign|sin|cos|tan|hook|mouseover|mouseout|text-style|text-color|text-colour|backround|transition|t8n|click-replace|click-append|click-prepend|click-remove|mouseover-replace|mouseover-append|mouseover-prepend|mouseover-remove|mouseout-replace|mouseout-append|mouseout-prepend|mouseout-remove)\b:</string>
+					<key>name</key>
+					<string>support.function.twee</string>
+				</dict>
+				<dict>
+					<key>match</key>
+					<string>\b(array|a|dataset|datamap)\b:</string>
+					<key>name</key>
+					<string>storage.type.twee</string>
+				</dict>
+				<dict>
+					<key>match</key>
+					<string>\b(history|substring|subarray)\b:</string>
+					<key>name</key>
+					<string>support.class.twee</string>
+				</dict>
+				<dict>
+					<key>match</key>
+					<string>\$\b([A-Za-z_][A-Za-z0-9_]*)\b|\?[A-Za-z0-9_]*\b</string>
 					<key>name</key>
 					<string>variable.parameter.twee</string>
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>\b(eq|neq|gt|gte|lt|lte|and|or|not|is|is not|to|into|contains|is in)\b</string>
+					<string>\b(it|time|length|last|1st|2nd|3rd|[0-9]th)\b</string>
+					<key>name</key>
+					<string>variable.language.twee</string>
+				</dict>
+				<dict>
+					<key>match</key>
+					<string>\b(eq|neq|gt|gte|lt|lte|and|or|not|is|is not|to|into|contains|is in)\b|'s</string>
 					<key>name</key>
 					<string>keyword.operator.twee</string>
 				</dict>
@@ -268,10 +296,6 @@
 					<string>\b(Infinity|NaN|undefined)\b</string>
 					<key>name</key>
 					<string>constant.language.js</string>
-				</dict>
-				<dict>
-					<key>include</key>
-					<string>meta.function.twee</string>
 				</dict>
 			</array>
 		</dict>
@@ -397,6 +421,10 @@
 			</dict>
 			<key>name</key>
 			<string>meta.comment.block.twee</string>
+		</dict>
+		<dict>
+			<key>include</key>
+			<string>text.html.basic</string>
 		</dict>
 	</array>
 	<key>scopeName</key>
