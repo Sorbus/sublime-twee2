@@ -1,7 +1,7 @@
 Sublime Twee2
 ============
 
-*twee2* Harlowe source code syntax highlighting for Sublime Text 2 and 3, based on [monospaced's sublime-twee](https://github.com/monospaced/sublime-twee).
+*twee2* *Harlowe* source code syntax highlighting for Sublime Text 2 and 3, based on [monospaced's sublime-twee](https://github.com/monospaced/sublime-twee).
 
 *twee2* is a command-line tool for writing hypertext stories.
 
