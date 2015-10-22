@@ -58,22 +58,22 @@
       }
     },
     { "name": "meta.function.twee",
-      "begin": "(<<)",
+      "begin": "(\\()",
       "beginCaptures": {
         "1": { "name": "comment.block.punctuation.definition.function.begin.twee" }
       },
-      "end": "(>>)",
+      "end": "(\\))",
       "endCaptures": {
         "1": { "name": "comment.block.punctuation.definition.function.end.twee" }
       },
       "patterns": [
-        { "match": "(back|choice|display|actions|pop|print|set|if|else|endif|remember|silently|endsilently|mask)",
+        { "match": "\\b(display|print|set|if|elseif|else|font|click|replace|append|set|put|move|link|link-goto|live|stop|text|history|either|random|array|a|count|floor|ceil|round|min|max|abs|sign:|sin|cos|tan|hook|mouseover|mouseout|substring|subarray|dataset|datamap|text-style|text-color|text-colour|backround|transition|t8n|click-replace|click-append|click-prepend|click-remove|mouseover-replace|mouseover-append|mouseover-prepend|mouseover-remove|mouseout-replace|mouseout-append|mouseout-prepend|mouseout-remove)\\b:",
           "name": "keyword.control.twee"
         },
-        { "match": "\\$\\b([A-Za-z_][A-Za-z0-9_]*)\\b",
+        { "match": "it|time|\\$\\b([A-Za-z_][A-Za-z0-9_]*)\\b",
           "name": "variable.parameter.twee"
         },
-        { "match": "\\b(eq|neq|gt|gte|lt|lte|and|or|not)\\b",
+        { "match": "\\b(eq|neq|gt|gte|lt|lte|and|or|not|is|is not|to|into|contains|is in)\\b",
           "name": "keyword.operator.twee"
         },
         { "match": "('[^']*')",
@@ -154,5 +154,5 @@
       "contentName": "comment.block.twee"
     }
   ],
-  "uuid": "a30284bd-5e16-49c8-9855-e095bcfe9c51"
+  "uuid": "03675de4-e93f-4afb-9af0-ea3e6198bfcf"
 }
