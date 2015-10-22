@@ -174,7 +174,7 @@
 		</dict>
 		<dict>
 			<key>begin</key>
-			<string>(\()</string>
+			<string>\(</string>
 			<key>beginCaptures</key>
 			<dict>
 				<key>1</key>
@@ -184,7 +184,7 @@
 				</dict>
 			</dict>
 			<key>end</key>
-			<string>(\))</string>
+			<string>\)</string>
 			<key>endCaptures</key>
 			<dict>
 				<key>1</key>
@@ -199,13 +199,13 @@
 			<array>
 				<dict>
 					<key>match</key>
-					<string>\b(display|print|set|if|elseif|else|font|click|replace|append|set|put|move|link|link-goto|live|stop|text|history|either|random|array|a|count|floor|ceil|round|min|max|abs|sign:|sin|cos|tan|hook|mouseover|mouseout|substring|subarray|dataset|datamap|text-style|text-color|text-colour|backround|transition|t8n|click-replace|click-append|click-prepend|click-remove|mouseover-replace|mouseover-append|mouseover-prepend|mouseover-remove|mouseout-replace|mouseout-append|mouseout-prepend|mouseout-remove)\b:</string>
+					<string>\b(savegames|load|save|display|print|set|if|elseif|else|font|click|replace|append|set|put|move|link|link-goto|live|stop|text|history|either|random|array|a|count|floor|ceil|round|min|max|abs|sign|sin|cos|tan|hook|mouseover|mouseout|substring|subarray|dataset|datamap|text-style|text-color|text-colour|backround|transition|t8n|click-replace|click-append|click-prepend|click-remove|mouseover-replace|mouseover-append|mouseover-prepend|mouseover-remove|mouseout-replace|mouseout-append|mouseout-prepend|mouseout-remove)\b:</string>
 					<key>name</key>
 					<string>keyword.control.twee</string>
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>it|time|\$\b([A-Za-z_][A-Za-z0-9_]*)\b</string>
+					<string>\b(it|time)\b|\$\b([A-Za-z_][A-Za-z0-9_]*)\b</string>
 					<key>name</key>
 					<string>variable.parameter.twee</string>
 				</dict>
@@ -268,6 +268,10 @@
 					<string>\b(Infinity|NaN|undefined)\b</string>
 					<key>name</key>
 					<string>constant.language.js</string>
+				</dict>
+				<dict>
+					<key>include</key>
+					<string>meta.function.twee</string>
 				</dict>
 			</array>
 		</dict>
