@@ -70,7 +70,7 @@
         { "match": "\\b(savegames|load|save|display|print|set|if|elseif|else|font|click|replace|append|set|put|move|link|link-goto|live|stop|text|history|either|random|array|a|count|floor|ceil|round|min|max|abs|sign|sin|cos|tan|hook|mouseover|mouseout|substring|subarray|dataset|datamap|text-style|text-color|text-colour|backround|transition|t8n|click-replace|click-append|click-prepend|click-remove|mouseover-replace|mouseover-append|mouseover-prepend|mouseover-remove|mouseout-replace|mouseout-append|mouseout-prepend|mouseout-remove)\\b:",
           "name": "keyword.control.twee"
         },
-        { "match": "\\b(it|time)\\b|\\$\\b([A-Za-z_][A-Za-z0-9_]*)\\b",
+        { "match": "\\b(it|time)\\b|\\$\\b([A-Za-z_][A-Za-z0-9_]*)\\b|\\?[A-Za-z0-9_]*\\b",
           "name": "variable.parameter.twee"
         },
         { "match": "\\b(eq|neq|gt|gte|lt|lte|and|or|not|is|is not|to|into|contains|is in)\\b",
@@ -142,6 +142,9 @@
           "name": "comment.block.punctuation.definition.image.divider.twee"
         }
       ]
+    },
+    { "name": "variable.parameter.twee",
+      "match": "<[A-Za-z0-9_]*\\|"
     },
     { "name": "meta.comment.block.twee",
       "begin": "(/%)",

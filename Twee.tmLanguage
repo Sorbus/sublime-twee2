@@ -205,7 +205,7 @@
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>\b(it|time)\b|\$\b([A-Za-z_][A-Za-z0-9_]*)\b</string>
+					<string>\b(it|time)\b|\$\b([A-Za-z_][A-Za-z0-9_]*)\b|\?[A-Za-z0-9_]*\b</string>
 					<key>name</key>
 					<string>variable.parameter.twee</string>
 				</dict>
@@ -365,6 +365,12 @@
 					<string>comment.block.punctuation.definition.image.divider.twee</string>
 				</dict>
 			</array>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>&lt;[A-Za-z0-9_]*\|</string>
+			<key>name</key>
+			<string>variable.parameter.twee</string>
 		</dict>
 		<dict>
 			<key>begin</key>
