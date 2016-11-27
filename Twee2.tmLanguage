@@ -209,7 +209,7 @@
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>\b(set|savegame|savedgames|loadgame|alert|prompt|confirm|display|print|font|click|replace|append|set|put|move|goto|link|link-goto|link-reveal|link-repeat|text|either|random|count|floor|ceil|round|min|max|abs|sign|sin|cos|tan|hook|mouseover|mouseout|text-style|text-color|text-colour|backround|transition|t8n|click-replace|click-append|click-prepend|click-remove|mouseover-replace|mouseover-append|mouseover-prepend|mouseover-remove|mouseout-replace|mouseout-append|mouseout-prepend|mouseout-remove)\b:</string>
+					<string>\b(set|savegame|savedgames|loadgame|alert|prompt|confirm|display|print|font|click|replace|append|set|put|move|go-to|link|link-goto|link-reveal|link-repeat|text|either|random|count|floor|ceil|round|min|max|abs|sign|sin|cos|tan|hook|mouseover|mouseout|text-style|text-color|text-colour|backround|transition|t8n|click-replace|click-append|click-prepend|click-remove|mouseover-replace|mouseover-append|mouseover-prepend|mouseover-remove|mouseout-replace|mouseout-append|mouseout-prepend|mouseout-remove)\b:</string>
 					<key>name</key>
 					<string>support.function.twee</string>
 				</dict>
