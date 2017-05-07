@@ -45,7 +45,7 @@
 		</dict>
 		<dict>
 			<key>begin</key>
-			<string>(^::)(.+)(\[)(stylesheet)(\])</string>
+			<string>(^::)(.+)(\[)(*+stylesheet*+)(\])</string>
 			<key>beginCaptures</key>
 			<dict>
 				<key>1</key>
@@ -90,7 +90,7 @@
 		</dict>
 		<dict>
 			<key>begin</key>
-			<string>(^::)(.+)(\[)(script)(\])</string>
+			<string>(^::)(.+)(\[)(*+script*+)(\])</string>
 			<key>beginCaptures</key>
 			<dict>
 				<key>1</key>
@@ -203,13 +203,13 @@
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>\b(if|else-if|else|live|stop)\b:</string>
+					<string>\b(if|elseif|else|live|stop)\b:</string>
 					<key>name</key>
 					<string>keyword.control.twee</string>
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>\b(set|savegame|savedgames|loadgame|alert|prompt|confirm|display|print|font|click|replace|append|set|put|move|go-to|link|link-goto|link-reveal|link-repeat|text|either|random|count|floor|ceil|round|min|max|abs|sign|sin|cos|tan|hook|mouseover|mouseout|text-style|text-color|text-colour|backround|transition|t8n|click-replace|click-append|click-prepend|click-remove|mouseover-replace|mouseover-append|mouseover-prepend|mouseover-remove|mouseout-replace|mouseout-append|mouseout-prepend|mouseout-remove)\b:</string>
+					<string>\b(set|savegame|savedgames|loadgame|alert|prompt|confirm|display|print|font|click|replace|append|set|put|move|goto|link|link-goto|text|either|random|count|floor|ceil|round|min|max|abs|sign|sin|cos|tan|hook|mouseover|mouseout|text-style|text-color|text-colour|backround|transition|t8n|click-replace|click-append|click-prepend|click-remove|mouseover-replace|mouseover-append|mouseover-prepend|mouseover-remove|mouseout-replace|mouseout-append|mouseout-prepend|mouseout-remove)\b:</string>
 					<key>name</key>
 					<string>support.function.twee</string>
 				</dict>
@@ -392,7 +392,7 @@
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>&lt;[A-Za-z0-9_]*\|</string>
+			<string>&lt;[A-Za-z0-9_]*\||\|[A-Za-z0-9_]*&gt;</string>
 			<key>name</key>
 			<string>variable.parameter.twee</string>
 		</dict>
