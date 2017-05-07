@@ -11,7 +11,7 @@ patterns:
   name: meta.html.twee
   patterns:
   - {include: text.html.basic}
-- begin: (^::)(.+)(\[)(*+stylesheet*+)(\])
+- begin: (^::)(.+)(\[)([A-Za-z0-9_]*stylesheet[A-Za-z0-9_]*)(\])
   beginCaptures:
     '1': {name: storage.type.twee}
     '2': {name: comment.block.entity.name.type.css.twee}
@@ -23,7 +23,7 @@ patterns:
   name: meta.css.twee
   patterns:
   - {include: source.css}
-- begin: (^::)(.+)(\[)(*+script*+)(\])
+- begin: (^::)(.+)(\[)([A-Za-z0-9_ ]*script[A-Za-z0-9_ ]*)(\])
   beginCaptures:
     '1': {name: storage.type.twee}
     '2': {name: comment.block.entity.name.type.js.twee}
